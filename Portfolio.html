@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Ricky G. Martinez | Web Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .fade-in-up { transform: translateY(20px); opacity: 0; transition: all 0.8s ease-out; }
+    .fade-in-up.aos-animate { transform: translateY(0); opacity: 1; }
+    .btn-primary { @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-blue-50 to-white" data-aos="fade-up">
+    <h1 class="text-5xl md:text-6xl font-bold mb-2">John Ricky G. Martinez</h1>
+    <p class="text-lg md:text-xl text-gray-600 mb-4">Bachelor of Science in Information Technology</p>
+    <div class="flex flex-col md:flex-row justify-center gap-6 text-sm md:text-base">
+      <p class="flex items-center gap-1">📍 Cubao E. Rodriguez, Quezon City</p>
+      <p class="flex items-center gap-1">📞 0966 278 5600</p>
+      <p class="flex items-center gap-1">✉️ johnricky22martinez@gmail.com</p>
+    </div>
+    <a href="RESUME1.pdf" download class="btn-primary mt-6 transform hover:scale-105 transition">Download PDF Resume</a>
+  </section>
+
+  <!-- OBJECTIVE -->
+  <section class="max-w-5xl mx-auto px-6 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4 text-blue-700">Career Objective</h2>
+    <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+      <p>
+        To secure a position in a company aligned with my field of expertise, where I can apply my
+        knowledge and skills to meet and exceed organizational standards, while also contributing to
+        the company's growth and success.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="max-w-6xl mx-auto px-6 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-8 text-blue-700">Technical Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <script>
+        const skills = [
+          "C#", "Java", "JavaScript", "React", "HTML5 / CSS", "PHP",
+          "Python", "Kotlin", "Bootstrap 5", "Tailwind CSS",
+          "MySQL", "PC & Network Troubleshooting",
+          "LAN & POS Cabling", "Printer & System Unit Maintenance","Photo and Video Editing"
+        ];
+        document.write(skills.map(skill => `
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center font-medium text-gray-700 cursor-pointer hover:bg-blue-50 hover:scale-105 transition-transform transform">
+            ${skill}
+          </div>
+        `).join(""));
+      </script>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="max-w-5xl mx-auto px-6 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-6 text-blue-700">Work Experience</h2>
+
+    <div class="bg-white p-6 rounded-3xl shadow-lg mb-6 hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+      <h3 class="font-semibold text-lg md:text-xl">On-the-Job Training – Celebrity Sports Plaza</h3>
+      <p class="text-sm text-gray-500 mb-2">January – May 2025</p>
+      <ul class="list-disc ml-5 space-y-1 text-sm">
+        <li>Hardware and software troubleshooting</li>
+        <li>System unit maintenance and printer repairs</li>
+        <li>LAN and POS network cabling</li>
+        <li>Zoom meeting setup and technical support</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+      <h3 class="font-semibold text-lg md:text-xl">Freelance Photographer</h3>
+      <p class="text-sm text-gray-500 mb-2">2019 – 2020</p>
+      <p class="text-sm">Wedding, graduation, and prom photography.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION & PROJECT -->
+  <section class="max-w-5xl mx-auto px-6 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-6 text-blue-700">Education & Capstone Project</h2>
+
+    <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+      <h3 class="font-semibold text-lg md:text-xl">BS in Information Technology</h3>
+      <p class="text-sm text-gray-500 mb-2">Systems Technology Institute (2020 – 2025)</p>
+      <h4 class="mt-3 font-medium text-blue-600">Capstone Project: Juan of Us (JOU)</h4>
+      <p class="text-sm mt-2">
+        A responsive online equipment and materials monitoring system for Barangay San Roque.
+        Residents can reserve equipment and schedule document appointments online, while administrators
+        efficiently manage inventory, reservations, and reports. The system reduces manual workload
+        and improves public service delivery.
+      </p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & ORGANIZATIONS -->
+  <section class="max-w-5xl mx-auto px-6 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-6 text-blue-700">Certifications & Organizations</h2>
+    <ul class="list-disc ml-6 space-y-2 text-sm">
+      <li>Student Volunteer – CITE (2024–2025)</li>
+      <li>Editor Member – CITE Creatives (2023–2024)</li>
+      <li>Completed Coursework: Java Foundations (2022)</li>
+      <li>Completed Coursework: Systems Administration (2022)</li>
+      <li>Student Republic Council Member (2019–2020)</li>
+      <li>President – TLE Club (2019–2020)</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-10 bg-blue-50" data-aos="fade-up">
+    <p class="font-medium">John Ricky G. Martinez</p>
+    <p class="text-sm">© 2025 | Web Portfolio</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>
